@@ -2,6 +2,7 @@
   height: 100vh;
   background-color: black;
   color: white;
+  user-select: none;
 }
 #SobreNosotros > h2{
   font-size: 5em;

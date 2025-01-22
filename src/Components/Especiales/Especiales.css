@@ -1,0 +1,67 @@
+#seccionEspeciales{
+  background-color: #100e14;
+  height: 100vh;
+  padding: 60px;
+  display: flex;
+  gap: 20px;
+  user-select: none;
+}
+#seccionEspeciales img{
+  height: 100%;
+  width: 50%;
+}
+#contenedorEspeciales{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+}
+#contenedorEspeciales h2{
+  font-size: 2.3em;
+}
+#contenedorEspeciales ul{
+  list-style: none;
+}
+#contenedorEspeciales ul li{
+  align-items: center;
+}
+#especiales{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contenedorInformacion{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.contenedorInformacion h3{
+  font-size: 1.2rem;
+  white-space: nowrap;
+  min-width: 30%;
+}
+.linea{
+  width: 20em;
+  margin: 0 5px;
+  height: 2px;
+  background-color: #eac445;
+  border-radius: 25px;
+}
+.precio{
+  color: #eac445;
+  font-size: 1.2em;
+}
+#contenedorEspeciales button{
+  white-space: nowrap;
+  width: 25%;
+  background-color: #eac445;
+  color: black;
+  padding: 8px 20px; 
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  font-size: 0.9em;
+  cursor: pointer;
+}
