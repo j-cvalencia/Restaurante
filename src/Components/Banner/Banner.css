@@ -1,0 +1,31 @@
+#banner{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+#banner video{
+  width: 100%;
+  z-index: -1;
+}
+#ContenidoBanner{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+#banner #ContenidoBanner h1{
+  font-size: 5em;
+  text-shadow: 10px 5px 2px black;
+  color: white;
+}
+#banner #ContenidoBanner p{
+  font-size: 2.5em;
+  text-shadow: 10px 5px 2px black;
+  color: white;
+}

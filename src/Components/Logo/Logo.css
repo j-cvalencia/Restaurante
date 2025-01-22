@@ -1,0 +1,17 @@
+#logo{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+#logo img{
+  height: 100%;
+  width: 20%;
+  padding: 2px;
+}
+#logo h3{
+  width: 80%;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 0.8;
+}

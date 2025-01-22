@@ -1,0 +1,21 @@
+#SobreNosotros{
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+#SobreNosotros > h2{
+  font-size: 5em;
+  text-shadow: 10px 5px 2px #100e14;
+  color: white;
+  text-align: center;
+}
+#tarjetas{
+  display: flex;
+  gap: 20px;
+  height: 70%;
+  background-color: blue;
+}
+#tarjetas img{
+  width: 33.3%;
+  height: 100%;
+}
