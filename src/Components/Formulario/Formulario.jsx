@@ -2,16 +2,17 @@ import { useForm } from "react-hook-form";
 import "./Formulario.css";
 
 export const Formulario = () => {
-  const {register,handleSubmit,formState:{errors}}=useForm({
+  const {register,handleSubmit,reset,formState:{errors}}=useForm({
     defaultValues: {
       nombre: '',
-      apellido: '',
-      correo: ''
+      correo: '',
+      mensaje: ''
     },
   });
 
   const onSubmit = (data)=>{
     console.log(data);
+    reset();
   }
   return (
     <form autocomplete="off" onSubmit={handleSubmit(onSubmit)}>

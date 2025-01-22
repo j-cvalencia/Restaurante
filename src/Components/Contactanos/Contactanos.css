@@ -82,3 +82,6 @@
   gap: 20px;
   font-size: 1.8em;
 }
+#redes ul i{
+  cursor: pointer;
+}
