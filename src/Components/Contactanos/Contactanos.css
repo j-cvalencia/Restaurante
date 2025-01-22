@@ -1,0 +1,83 @@
+#contactanos{
+  width: 100%;
+  height: 100vh;
+  padding: 50px;
+  background-color: black;
+  display: flex;
+  gap: 1%;
+  align-items: center;
+  position: relative;
+}
+#formulario{
+  width: 49%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#formulario h2{
+  font-size: 5em;
+  text-shadow: 10px 5px 2px #100e14;
+  color: white;
+  padding-top: 20px;
+}
+#informacion{
+  width: 300px;
+  height: 300px;
+  background-color: #100e14;
+  position: absolute;
+  right: 10em;
+  z-index: 100;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#informacion h3{
+  font-size: 1.4em;
+  margin-bottom: 20px;
+}
+#informacion ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1.2em;
+}
+#informacion i{
+  color: #eac445;
+  font-size: 1.3em;
+  margin-right: 10px;
+}
+#cuadro{
+  width: 25px;
+  height: 25px;
+  background-color: #eac445;
+  position: absolute;
+  top: -8px;
+  left: -8px;
+}
+#decoracion{
+  width: 20%;
+  background-color: #eac445;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  z-index: 99;
+}
+#redes{
+  color: black;
+  position: absolute;
+  bottom: 1em;
+  right: 5em;
+  z-index: 102;
+}
+#redes ul{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-size: 1.8em;
+}
