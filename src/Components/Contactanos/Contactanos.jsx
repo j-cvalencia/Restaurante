@@ -4,7 +4,7 @@ import "./Contactanos.css";
 export const Contactanos = () => {
   return (
     <section id="contactanos">
-      <div id="formulario">
+      <div id="contenedorFormulario">
         <h2>Contactanos</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
@@ -12,7 +12,9 @@ export const Contactanos = () => {
           optio, illum, mollitia magnam a quisquam minima iusto sunt doloribus
           ipsum!
         </p>
-        <Formulario />
+        <div id="formulario">
+          <Formulario />
+        </div>
       </div>
       <div id="informacion">
         <div id="cuadro"></div>

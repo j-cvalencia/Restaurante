@@ -36,7 +36,7 @@ export const Especiales = () => {
                 <div className='contenedorInformacion'>
                   <h3>{plato.nombre}</h3>
                   <div className='linea'></div>
-                  <p className='precio'>{plato.precio}</p>
+                  <p className='precio'>$ {plato.precio}</p>
                 </div>
                 <p className='descripcion'>{plato.descripcion}</p>
               </li>

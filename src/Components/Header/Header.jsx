@@ -1,6 +1,6 @@
 import {Logo} from '../Logo/Logo';
 import { Nav } from '../Nav/Nav';
-import { Modo } from '../Modo/Modo';
+import { Modo } from '../Contactarme/Contactame';
 import './Header.css';
 
 export const Header = () => {

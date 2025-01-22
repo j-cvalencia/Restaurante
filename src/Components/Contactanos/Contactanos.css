@@ -7,8 +7,9 @@
   gap: 1%;
   align-items: center;
   position: relative;
+  user-select: none;
 }
-#formulario{
+#contenedorFormulario{
   width: 49%;
   height: 100%;
   color: white;
@@ -16,7 +17,7 @@
   flex-direction: column;
   gap: 15px;
 }
-#formulario h2{
+#contenedorFormulario h2{
   font-size: 5em;
   text-shadow: 10px 5px 2px #100e14;
   color: white;

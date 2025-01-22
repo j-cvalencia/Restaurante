@@ -14,7 +14,7 @@ export const Formulario = () => {
     console.log(data);
   }
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form autocomplete="off" onSubmit={handleSubmit(onSubmit)}>
       <input
         type="text"
         placeholder="Nombre"
