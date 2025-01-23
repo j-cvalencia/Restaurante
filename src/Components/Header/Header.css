@@ -11,3 +11,24 @@
   z-index: 101;
   user-select: none;
 }
+
+@media (min-width: 1200px) { 
+  #header{
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1199px) { }
+
+@media (max-width: 767px) { 
+  #header{
+    padding: 10px;
+    height: 8vh;
+  }
+}
+
+@media (max-width: 480px){ 
+  #header{
+    height: 5vh;
+  }
+}

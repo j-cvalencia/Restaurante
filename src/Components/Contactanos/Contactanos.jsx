@@ -21,19 +21,19 @@ export const Contactanos = () => {
         <h3>Info</h3>
         <ul>
           <li>
-            <i class="fa-regular fa-envelope"></i>Correo@correo.com
+            <i className="fa-regular fa-envelope"></i>Correo@correo.com
           </li>
-          <li><i class="fa-solid fa-mobile-screen"></i>+00 00 00 000</li>
-          <li><i class="fa-solid fa-location-dot"></i>Carrera 0 # 00-00 Extra</li>
-          <li><i class="fa-regular fa-clock"></i>09:00-18:00</li>
+          <li><i className="fa-solid fa-mobile-screen"></i>+00 00 00 000</li>
+          <li><i className="fa-solid fa-location-dot"></i>Carrera 0 # 00-00 Extra</li>
+          <li><i className="fa-regular fa-clock"></i>09:00-18:00</li>
         </ul>
       </div>
       <div id="decoracion"></div>
       <div id="redes">
         <ul>
-          <li><i class="fa-brands fa-facebook"></i></li>
-          <li><i class="fa-brands fa-instagram"></i></li>
-          <li><i class="fa-brands fa-whatsapp"></i></li>
+          <li><i className="fa-brands fa-facebook"></i></li>
+          <li><i className="fa-brands fa-instagram"></i></li>
+          <li><i className="fa-brands fa-whatsapp"></i></li>
         </ul>
       </div>
     </section>

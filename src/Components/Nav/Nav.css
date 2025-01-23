@@ -13,3 +13,28 @@ nav ul li a{
   text-decoration: none;
   color: white;
 }
+
+
+@media (min-width: 1200px) { 
+  #header{
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1199px) { 
+  nav ul li{
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 760px) { 
+  nav ul li{
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 480px){ 
+  nav ul li{
+    font-size: 0.5em;
+  }
+}

@@ -13,8 +13,8 @@ function App() {
       <Header />
       <Banner />
       <SobreNosotros />
-      <Especiales/>
-      <Contactanos/>
+      {/*<Especiales/>
+      <Contactanos/>*/}
     </>
   )
 }

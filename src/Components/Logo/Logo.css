@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   height: 100%;
+  width: 200px;
 }
 #logo img{
   height: 100%;
@@ -14,4 +15,22 @@
   font-weight: bold;
   font-size: 1.2em;
   line-height: 0.8;
+}
+
+@media (min-width: 1200px) { 
+}
+
+@media (min-width: 760px) and (max-width: 1199px) { 
+}
+
+@media (max-width: 767px) { 
+  #logo h3{
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px){ 
+  #logo h3{
+    font-size: 0.7em;
+  }
 }

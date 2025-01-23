@@ -7,3 +7,29 @@
   cursor: pointer;
   font-size: 1.2em;
 }
+
+@media (min-width: 1200px) { 
+
+}
+
+@media (min-width: 836px) and (max-width: 1199px) { 
+  
+}
+
+@media (max-width: 836px) { 
+  
+}
+@media (max-width: 584px) { 
+  .botonesRedondos{
+    width: 200px;
+    height: 40px;
+    font-size: 1em;
+  }
+}
+@media (max-width: 480px){ 
+  .botonesRedondos{
+    width: 150px;
+    height: 30px;
+    font-size: 0.6em;
+  }
+}
