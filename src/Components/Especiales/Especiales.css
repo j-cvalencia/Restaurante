@@ -40,10 +40,10 @@
 .contenedorInformacion h3{
   font-size: 1.2rem;
   white-space: nowrap;
-  min-width: 30%;
+  width: 30%;
 }
 .linea{
-  width: 20em;
+  width: 60%;
   margin: 0 5px;
   height: 2px;
   background-color: #eac445;
@@ -64,4 +64,76 @@
   font-weight: bold;
   font-size: 0.9em;
   cursor: pointer;
+}
+
+@media (min-width: 1200px) { }
+
+@media (min-width: 760px) and (max-width: 1199px) { 
+  #contenedorEspeciales button{
+    width: 40%;
+    font-weight: bold;
+    font-size: 0.7em;
+  }
+  .linea{
+    width: 40%;
+  }
+  .contenedorInformacion{
+    font-size: 0.8rem;
+  }
+  .contenedorInformacion h3{
+    font-size: 1.1rem;
+    white-space: nowrap;
+    width: 50%;
+  }
+}
+
+@media (max-width: 760px) { 
+  #contenedorEspeciales h2{
+    font-size: 2em;
+  }
+  #contenedorEspeciales button{
+    width: 50%;
+    font-size: 0.5em;
+  }
+  .linea{
+    width: 80%;
+  }
+  .contenedorInformacion h3{
+    font-size: 1rem;
+    white-space: nowrap;
+    width: 80%;
+  }
+  .contenedorInformacion p{
+    font-size: 1rem;
+  }
+  .descripcion{
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px){ 
+  #contenedorEspeciales h2{
+    font-size: 2em;
+  }
+  #contenedorEspeciales button{
+    width: 100%;
+    font-size: 0.5em;
+  }
+  .linea{
+    width: 80%;
+  }
+  .contenedorInformacion{
+    flex-direction: column;
+  }
+  .contenedorInformacion h3{
+    font-size: 0.8rem;
+    width: 100%;
+    text-align: center;
+  }
+  .contenedorInformacion p{
+    font-size: 0.8rem;
+  }
+  .descripcion{
+    font-size: 0.6rem;
+  }
 }

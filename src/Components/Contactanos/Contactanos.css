@@ -23,12 +23,21 @@
   color: white;
   padding-top: 20px;
 }
+#decoracion{
+  width: 20%;
+  background-color: #eac445;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  z-index: 99;
+}
 #informacion{
   width: 300px;
   height: 300px;
   background-color: #100e14;
   position: absolute;
-  right: 10em;
+  left: -10em;
+  top: 10em;
   z-index: 100;
   padding: 20px;
   color: white;
@@ -61,14 +70,6 @@
   top: -8px;
   left: -8px;
 }
-#decoracion{
-  width: 20%;
-  background-color: #eac445;
-  position: absolute;
-  right: 0;
-  height: 100%;
-  z-index: 99;
-}
 #redes{
   color: black;
   position: absolute;
@@ -84,4 +85,65 @@
 }
 #redes ul i{
   cursor: pointer;
+}
+
+@media (min-width: 1200px) { }
+
+@media (min-width: 760px) and (max-width: 1199px) { 
+  #contenedorFormulario h2{
+    font-size: 4em;
+  }
+  #redes{
+    bottom: 1em;
+    right: 2em;
+  }
+}
+
+@media (max-width: 767px) { 
+  #informacion{
+    width: 200px;
+    height: 200px;
+    font-size: 0.7em;
+    left: -10em;
+    top: 30em;
+  }
+  #contenedorFormulario h2{
+    font-size: 3em;
+  }
+  #redes{
+    bottom: 1em;
+    right: 1em;
+  }
+  #redes ul{
+    gap: 15px;
+    font-size: 1.2em;
+  }
+  #contenedorFormulario{
+    height: 50%;
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 480px){ 
+  #informacion{
+    width: 180px;
+    height: 180px;
+    font-size: 0.5em;
+    left: -15em;
+    top: 40em;
+  }
+  #contenedorFormulario h2{
+    font-size: 2.2em;
+  }
+  #redes{
+    bottom: 0em;
+    right: 0em;
+  }
+  #redes ul{
+    gap: 8px;
+    font-size: 1.2em;
+  }
+  #contenedorFormulario p{
+    font-size: 0.6em;
+  }
 }

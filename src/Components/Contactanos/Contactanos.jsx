@@ -7,33 +7,45 @@ export const Contactanos = () => {
       <div id="contenedorFormulario">
         <h2>Contactanos</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
-          debitis et! Voluptas nostrum eos dolor culpa facere sequi, asperiores
-          optio, illum, mollitia magnam a quisquam minima iusto sunt doloribus
-          ipsum!
+          Tienes alguna reclamo,sugerencia o agradecimiento este es el lugar para hacernoslo saber
         </p>
         <div id="formulario">
           <Formulario />
         </div>
       </div>
-      <div id="informacion">
-        <div id="cuadro"></div>
-        <h3>Info</h3>
-        <ul>
-          <li>
-            <i className="fa-regular fa-envelope"></i>Correo@correo.com
-          </li>
-          <li><i className="fa-solid fa-mobile-screen"></i>+00 00 00 000</li>
-          <li><i className="fa-solid fa-location-dot"></i>Carrera 0 # 00-00 Extra</li>
-          <li><i className="fa-regular fa-clock"></i>09:00-18:00</li>
-        </ul>
+
+      <div id="decoracion">
+        <div id="informacion">
+          <div id="cuadro"></div>
+          <h3>Info</h3>
+          <ul>
+            <li>
+              <i className="fa-regular fa-envelope"></i>Correo@correo.com
+            </li>
+            <li>
+              <i className="fa-solid fa-mobile-screen"></i>+00 00 00 000
+            </li>
+            <li>
+              <i className="fa-solid fa-location-dot"></i>Carrera 0 # 00-00
+              Extra
+            </li>
+            <li>
+              <i className="fa-regular fa-clock"></i>09:00-18:00
+            </li>
+          </ul>
+        </div>
       </div>
-      <div id="decoracion"></div>
       <div id="redes">
         <ul>
-          <li><i className="fa-brands fa-facebook"></i></li>
-          <li><i className="fa-brands fa-instagram"></i></li>
-          <li><i className="fa-brands fa-whatsapp"></i></li>
+          <li>
+            <i className="fa-brands fa-facebook"></i>
+          </li>
+          <li>
+            <i className="fa-brands fa-instagram"></i>
+          </li>
+          <li>
+            <i className="fa-brands fa-whatsapp"></i>
+          </li>
         </ul>
       </div>
     </section>
