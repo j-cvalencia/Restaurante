@@ -7,7 +7,7 @@ export const Contactanos = () => {
       <div id="contenedorFormulario">
         <h2>Contactanos</h2>
         <p>
-          Tienes alguna reclamo,sugerencia o agradecimiento este es el lugar para hacernoslo saber
+          Tienes algun reclamo,sugerencia o agradecimiento este es el lugar para hacernoslo saber
         </p>
         <div id="formulario">
           <Formulario />
