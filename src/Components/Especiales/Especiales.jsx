@@ -26,7 +26,7 @@ export const Especiales = () => {
   
   return (
     <section id='seccionEspeciales'>
-      <img src="../../../public/especiales.jfif" alt="" />
+      <img src={`${import.meta.env.BASE_URL}/imagenes/Especiales.jfif`} alt="" />
       <div id='contenedorEspeciales'>
         <h2>Nuestros Especiales</h2>
         <ul id='especiales'>
