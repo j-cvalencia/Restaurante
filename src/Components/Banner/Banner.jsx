@@ -2,7 +2,7 @@ import { Button } from '../Button/Button'
 import './Banner.css'
 
 
-export const Banner = ({videoBanner,tituloBanner,descripcionBanner,textoBTN1,textoBTN2}) => {
+export const Banner = ({videoBanner,tituloBanner='Bienvenido a Nombre',descripcionBanner='Descripcion',textoBTN1='Boton1',textoBTN2='Boton2'}) => {
   return (
     <div>
       <div id='banner'>

@@ -1,6 +1,6 @@
 import './SobreNosotros.css'
 
-export const SobreNosotros = ({imagen1,imagen2,nombre,eslogan,descripcion}) => {
+export const SobreNosotros = ({imagen1,imagen2,nombre='Nombre de la pagina',eslogan='Eslogan de la pagina',descripcion='Descripcion de la pagina'}) => {
   return (
     <section id='SobreNosotros'>
       <h2>Sobre Nosotros</h2>

@@ -1,7 +1,7 @@
 import { Formulario } from "../Formulario/Formulario";
 import "./Contactanos.css";
 
-export const Contactanos = () => {
+export const Contactanos = ({correo='Correo@correo.com',telefono='+00 00 00 000',direccion='Carrera 0 # 00-00 Extra',horario='09:00-18:00',facebook,instagram,whatsapp}) => {
   return (
     <section id="contactanos">
       <div id="contenedorFormulario">
@@ -20,17 +20,20 @@ export const Contactanos = () => {
           <h3>Info</h3>
           <ul>
             <li>
-              <i className="fa-regular fa-envelope"></i>Correo@correo.com
+              <i className="fa-regular fa-envelope"></i>
+              {correo}
             </li>
             <li>
-              <i className="fa-solid fa-mobile-screen"></i>+00 00 00 000
+              <i className="fa-solid fa-mobile-screen"></i>
+              {telefono}
             </li>
             <li>
-              <i className="fa-solid fa-location-dot"></i>Carrera 0 # 00-00
-              Extra
+              <i className="fa-solid fa-location-dot"></i>
+              {direccion}
             </li>
             <li>
-              <i className="fa-regular fa-clock"></i>09:00-18:00
+              <i className="fa-regular fa-clock"></i>
+              {horario}
             </li>
           </ul>
         </div>
@@ -38,13 +41,13 @@ export const Contactanos = () => {
       <div id="redes">
         <ul>
           <li>
-            <i className="fa-brands fa-facebook"></i>
+            <a href="" target="_blank"><i className="fa-brands fa-facebook"></i></a>
           </li>
           <li>
-            <i className="fa-brands fa-instagram"></i>
+            <a href="" target="_blank"><i className="fa-brands fa-instagram"></i></a>
           </li>
           <li>
-            <i className="fa-brands fa-whatsapp"></i>
+            <a href="" target="_blank"><i className="fa-brands fa-whatsapp"></i></a>
           </li>
         </ul>
       </div>

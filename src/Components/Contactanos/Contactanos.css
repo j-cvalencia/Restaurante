@@ -85,6 +85,7 @@
 }
 #redes ul i{
   cursor: pointer;
+  color: black;
 }
 
 @media (min-width: 1200px) { }

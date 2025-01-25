@@ -1,32 +1,13 @@
+import { useState } from 'react';
 import './Especiales.css'
 
-export const Especiales = () => {
-  const platos = [
-    {
-      nombre: 'Bife de Chorizo',
-      precio: 250,
-      descripcion: 'Corte argentino de carne a la parrilla, servido con puré de papas y chimichurri.'
-    },
-    {
-      nombre: 'Costillas BBQ',
-      precio: 300,
-      descripcion: 'Costillas de cerdo glaseadas con salsa barbacoa, acompañadas de papas fritas y ensalada coleslaw.'
-    },
-    {
-      nombre: 'Pollo a la Parrilla',
-      precio: 180,
-      descripcion: 'Jugoso pollo marinado en especias y asado a la parrilla, servido con verduras asadas.'
-    },
-    {
-      nombre: 'Tacos de Arrachera',
-      precio: 150,
-      descripcion: 'Suaves tortillas rellenas de arrachera, cebolla, cilantro y salsa de tu elección.'
-    }
-  ];
+export const Especiales = ({imagen,datos=[{nombre:'Opcion 1',precio:'10',descripcion: 'Descripcion del menu'},{nombre:'Opcion 2',precio:'10',descripcion: 'Descripcion del menu'},{nombre:'Opcion 3',precio:'10',descripcion: 'Descripcion del menu'}]}) => {
+
+  const [platos, setPlatos] = useState(datos)
   
   return (
     <section id='seccionEspeciales'>
-      <img src={`${import.meta.env.BASE_URL}/imagenes/Especiales.jfif`} alt="" />
+      <img src={`${import.meta.env.BASE_URL}${imagen}`} alt="" />
       <div id='contenedorEspeciales'>
         <h2>Nuestros Especiales</h2>
         <ul id='especiales'>
