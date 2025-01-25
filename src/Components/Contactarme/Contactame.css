@@ -1,14 +1,10 @@
-#Modo{
+#contacto{
   font-size: 2em;
   cursor: pointer;
   color: white;
 }
-
-@media (min-width: 1200px) { 
-
-}
-
-@media (min-width: 760px) and (max-width: 1199px) { 
+#contactame{
+  color: white
 }
 
 @media (max-width: 767px) { 

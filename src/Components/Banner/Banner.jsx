@@ -2,17 +2,17 @@ import { Button } from '../Button/Button'
 import './Banner.css'
 
 
-export const Banner = () => {
+export const Banner = ({videoBanner,tituloBanner,descripcionBanner,textoBTN1,textoBTN2}) => {
   return (
     <div>
       <div id='banner'>
-        <video src={`${import.meta.env.BASE_URL}/videos/videoBanner.mp4`} autoPlay muted loop ></video>
+        <video src={`${import.meta.env.BASE_URL}${videoBanner}`} autoPlay muted loop ></video>
         <div id='ContenidoBanner'>
-          <h1>Bienvenido a Restaurante Ensigna</h1>
-          <p>Donde nuestra comida es deliciosa y unica</p>
+          <h1>{tituloBanner}</h1>
+          <p>{descripcionBanner}</p>
           <div id='botones'>
-            <Button texto={'VER CARTA'} colorTexto={'white'} colorFondo={'black'}/>
-            <Button texto={'RESERVAR MESA'} colorTexto={'black'} colorFondo={'#eac445'}/>
+            <Button texto={textoBTN1} colorTexto={'white'} colorFondo={'black'}/>
+            <Button texto={textoBTN2} colorTexto={'black'} colorFondo={'#eac445'}/>
           </div>
         </div>
       </div>

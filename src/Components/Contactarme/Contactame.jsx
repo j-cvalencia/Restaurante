@@ -1,9 +1,9 @@
 import './Contactame.css'
 
-export const Modo = () => {
+export const Contactame = ({github}) => {
   return (
-    <div id='Modo'>
-      <i className="fa-brands fa-github"></i>
+    <div id='contacto'>
+      <a id='contactame' href={github} target='_blank'><i className="fa-brands fa-github"></i></a>
     </div>
   )
 }
