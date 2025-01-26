@@ -1,20 +1,20 @@
-#contacto{
+#contactame{
   font-size: 2em;
   cursor: pointer;
   color: white;
 }
-#contactame{
+#linkContactame{
   color: white
 }
 
 @media (max-width: 767px) { 
-  #Modo{
+  #contactame{
     font-size: 1.5em;
   }
 }
 
 @media (max-width: 576px){
-  #Modo{
+  #contactame{
     display: none;
   }
 }

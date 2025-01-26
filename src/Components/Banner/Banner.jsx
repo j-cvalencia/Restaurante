@@ -4,7 +4,7 @@ import './Banner.css'
 
 export const Banner = ({videoBanner,tituloBanner='Bienvenido a Nombre',descripcionBanner='Descripcion',textoBTN1='Boton1',textoBTN2='Boton2'}) => {
   return (
-    <div>
+    <section id='inicio'>
       <div id='banner'>
         <video src={`${import.meta.env.BASE_URL}${videoBanner}`} autoPlay muted loop ></video>
         <div id='ContenidoBanner'>
@@ -16,6 +16,6 @@ export const Banner = ({videoBanner,tituloBanner='Bienvenido a Nombre',descripci
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

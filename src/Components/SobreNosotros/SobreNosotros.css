@@ -1,10 +1,10 @@
-#SobreNosotros{
+#sobrenosotros{
   height: 100vh;
   background-color: black;
   color: white;
   user-select: none;
 }
-#SobreNosotros > h2{
+#sobrenosotros > h2{
   font-size: 5em;
   text-shadow: 10px 5px 2px #100e14;
   color: white;
@@ -67,13 +67,13 @@
 }
 
 @media (max-width: 767px) {
-  #SobreNosotros{
+  #sobrenosotros{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   } 
-  #SobreNosotros > h2{
+  #sobrenosotros > h2{
     font-size: 4em;
   }
   #tarjetas{
@@ -83,7 +83,7 @@
 }
 
 @media (max-width: 576px){ 
-  #SobreNosotros > h2{
+  #sobrenosotros > h2{
     font-size: 2em;
   }
   #tarjetaPrincipal{
