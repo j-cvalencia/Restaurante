@@ -12,7 +12,7 @@ export const Especiales = ({imagen,datos=[{nombre:'Opcion 1',precio:'10',descrip
         <div id='contenedorEspeciales'>
           <h2>Nuestros Especiales</h2>
           <ul id='especiales'>
-            {platos.map((plato)=>{
+            {platos[0].items.map((plato)=>{
               return(
                 <li className='plato' key={plato.nombre}>
                   <div className='contenedorInformacion'>

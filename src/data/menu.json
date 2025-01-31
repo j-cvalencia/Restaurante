@@ -1,0 +1,207 @@
+[
+  {
+    "title": "Especiales",
+    "items": [
+      {
+        "nombre": "Bife de Chorizo",
+        "precio": "250",
+        "descripcion": "Corte argentino de carne a la parrilla, servido con puré de papas y chimichurri."
+      },
+      {
+        "nombre": "Costillas BBQ",
+        "precio": "300",
+        "descripcion": "Costillas de cerdo glaseadas con salsa barbacoa, acompañadas de papas fritas y ensalada coleslaw."
+      },
+      {
+        "nombre": "Pollo a la Parrilla",
+        "precio": "180",
+        "descripcion": "Jugoso pollo marinado en especias y asado a la parrilla, servido con verduras asadas."
+      },
+      {
+        "nombre": "Tacos de Arrachera",
+        "precio": "150",
+        "descripcion": "Suaves tortillas rellenas de arrachera, cebolla, cilantro y salsa de tu elección."
+      }
+    ]
+  },
+  {
+    "title":"Desayunos",
+    "items":[
+      {
+        "nombre": "Chilaquiles con Arrachera",
+        "precio": "180",
+        "descripcion": "Crujientes chilaquiles bañados en salsa roja o verde, acompañados de arrachera a la parrilla, crema, queso y huevo al gusto."
+      },
+      {
+        "nombre": "Omelette de Jamón y Queso",
+        "precio": "150",
+        "descripcion": "Omelette esponjoso relleno de jamón y queso derretido, acompañado de pan tostado y ensalada fresca."
+      },
+      {
+        "nombre": "Huevos Rancheros con Cecina",
+        "precio": "170",
+        "descripcion": "Huevos fritos sobre tortillas de maíz, bañados en salsa roja, acompañados de cecina asada y frijoles refritos."
+      },
+      {
+        "nombre": "Molletes con Chorizo",
+        "precio": "140",
+        "descripcion": "Pan bolillo tostado con frijoles refritos, queso gratinado y chorizo dorado, acompañado de pico de gallo."
+      },
+      {
+        "nombre": "Hotcakes con Tocino",
+        "precio": "130",
+        "descripcion": "Esponjosos hotcakes con miel de maple y mantequilla, servidos con tocino crujiente."
+      },
+      {
+        "nombre": "Burrito de Desayuno",
+        "precio": "160",
+        "descripcion": "Tortilla de harina rellena de huevo revuelto, chorizo, queso derretido y papas, acompañada de salsa ranchera."
+      },
+      {
+        "nombre": "Tostadas de Aguacate con Jamón Serrano",
+        "precio": "180",
+        "descripcion": "Tostadas de pan artesanal con aguacate machacado, rodajas de jamón serrano y un toque de aceite de oliva."
+      },
+      {
+        "nombre": "Desayuno Americano",
+        "precio": "190",
+        "descripcion": "Dos huevos al gusto, tocino o jamón, papas hash brown y pan tostado con mantequilla y mermelada."
+      }
+    ]
+  },
+  {
+    "title":"Almuerzos",
+    "items":[
+      {
+        "nombre": "Parrillada Mixta",
+        "precio": "350",
+        "descripcion": "Selección de carnes a la parrilla que incluye bife de chorizo, costillas de cerdo, pollo y chorizo, acompañado de papas asadas y ensalada."
+      },
+      {
+        "nombre": "Asado de Tira",
+        "precio": "280",
+        "descripcion": "Corte de costilla de res cocinado lentamente a la parrilla, servido con chimichurri y papas fritas."
+      },
+      {
+        "nombre": "Milanesa Napolitana",
+        "precio": "220",
+        "descripcion": "Milanesa de res empanizada con queso derretido, salsa de tomate y jamón, acompañada de puré de papas o ensalada."
+      },
+      {
+        "nombre": "Filete de Res en Salsa de Champiñones",
+        "precio": "260",
+        "descripcion": "Filete de res jugoso bañado en salsa de champiñones y crema, acompañado de arroz y verduras salteadas."
+      },
+      {
+        "nombre": "Picaña a la Parrilla",
+        "precio": "300",
+        "descripcion": "Corte brasileño de res a la parrilla con sal gruesa, acompañado de farofa, ensalada y papas rústicas."
+      },
+      {
+        "nombre": "Arroz con Costillas",
+        "precio": "190",
+        "descripcion": "Arroz salteado con costillas de cerdo deshuesadas, pimientos y especias, servido con plátanos fritos."
+      },
+      {
+        "nombre": "Estofado de Res",
+        "precio": "210",
+        "descripcion": "Guiso casero de carne de res cocinada a fuego lento con zanahorias, papas y especias, acompañado de arroz blanco."
+      },
+      {
+        "nombre": "Lomo Saltado",
+        "precio": "230",
+        "descripcion": "Trozos de lomo de res salteados con cebolla, tomate y papas fritas, acompañado de arroz blanco."
+      }
+    ]
+  },
+  {
+    "title":"Cena",
+    "items":[
+      {
+        "nombre": "Lomo a la Pimienta",
+        "precio": "280",
+        "descripcion": "Medallón de lomo de res bañado en salsa de pimienta negra, acompañado de puré de papas y espárragos."
+      },
+      {
+        "nombre": "Hamburguesa Artesanal",
+        "precio": "200",
+        "descripcion": "Jugosa hamburguesa de res con queso cheddar, tocino, lechuga, tomate y salsa especial, servida con papas fritas."
+      },
+      {
+        "nombre": "Tacos de Ribeye",
+        "precio": "220",
+        "descripcion": "Tacos de ribeye con guacamole, cebolla morada encurtida y salsa de chile habanero."
+      },
+      {
+        "nombre": "Costillas de Cordero",
+        "precio": "320",
+        "descripcion": "Costillas de cordero a la parrilla con hierbas frescas, acompañadas de risotto de hongos."
+      },
+      {
+        "nombre": "Wrap de Pollo a la Parrilla",
+        "precio": "180",
+        "descripcion": "Tortilla de trigo rellena de pollo a la parrilla, aguacate, lechuga y aderezo de yogur, acompañada de chips de camote."
+      },
+      {
+        "nombre": "Bistec a lo Pobre",
+        "precio": "250",
+        "descripcion": "Bistec de res con huevo frito, plátano maduro, arroz y papas fritas."
+      },
+      {
+        "nombre": "Sándwich de Roast Beef",
+        "precio": "210",
+        "descripcion": "Pan artesanal relleno de roast beef, queso suizo, mostaza Dijon y rúcula, acompañado de ensalada fresca."
+      },
+      {
+        "nombre": "Sopa de Tortilla con Pollo",
+        "precio": "170",
+        "descripcion": "Sopa tradicional mexicana con tiras de tortilla, pollo deshebrado, aguacate y queso fresco."
+      }
+    ]
+  },
+  {
+    "title":"Postres",
+    "items":[
+      {
+        "nombre": "Tiramisú",
+        "precio": "150",
+        "descripcion": "Clásico postre italiano con capas de bizcocho empapado en café, crema de mascarpone y cacao en polvo."
+      },
+      {
+        "nombre": "Brownie con Helado",
+        "precio": "130",
+        "descripcion": "Brownie de chocolate con nueces, servido con una bola de helado de vainilla y salsa de chocolate."
+      },
+      {
+        "nombre": "Cheesecake de Frutos Rojos",
+        "precio": "140",
+        "descripcion": "Suave pastel de queso con base de galleta y cubierta de frutos rojos frescos."
+      },
+      {
+        "nombre": "Flan Napolitano",
+        "precio": "120",
+        "descripcion": "Flan cremoso de vainilla con caramelo líquido y un toque de crema batida."
+      },
+      {
+        "nombre": "Churros con Chocolate",
+        "precio": "110",
+        "descripcion": "Crujientes churros espolvoreados con azúcar y canela, acompañados de una taza de chocolate caliente."
+      },
+      {
+        "nombre": "Pastel de Tres Leches",
+        "precio": "140",
+        "descripcion": "Bizcocho esponjoso bañado en una mezcla de tres leches, cubierto con crema y fresas."
+      },
+      {
+        "nombre": "Helado Artesanal",
+        "precio": "100",
+        "descripcion": "Helado casero disponible en sabores como vainilla, chocolate, fresa y pistache."
+      },
+      {
+        "nombre": "Crème Brûlée",
+        "precio": "160",
+        "descripcion": "Clásico postre francés con crema de vainilla y una capa crujiente de caramelo flameado."
+      }
+    ]
+  }
+]
