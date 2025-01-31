@@ -1,0 +1,62 @@
+body{
+  background-color: black;
+  color: white;
+}
+h2{
+  font-size: 5em;
+  text-shadow: 10px 5px 2px #100e14;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+#contenedorMenú{
+  padding: 1.5em;
+  padding-top: 0;
+}
+.titulosMenú{
+  font-size: 3em;
+  text-shadow: 10px 5px 2px #100e14;
+  color: #eac445;
+  padding-top: 20px;
+  text-align: left;
+  text-align: center;
+}
+#botonRegresar{
+  background-color: #eac445;
+  color: black;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  top: 1rem;
+  left: 1rem;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+}
+ul{
+  list-style: none;
+}
+.opcionesMenú ul{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.opcionesMenú h2{
+  margin: 15px 0px;
+}
+
+@media (max-width: 480px){ 
+  h2{
+    font-size: 2.5em;
+  }
+  .opcionesMenú h2{
+    font-size: 2em;
+  }
+  .opcionesMenú ul{
+    text-align: center;
+  }
+}

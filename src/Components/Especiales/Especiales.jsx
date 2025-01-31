@@ -1,9 +1,15 @@
 import { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import './Especiales.css'
 
-export const Especiales = ({imagen,datos=[{nombre:'Opcion 1',precio:'10',descripcion: 'Descripcion del menu'},{nombre:'Opcion 2',precio:'10',descripcion: 'Descripcion del menu'},{nombre:'Opcion 3',precio:'10',descripcion: 'Descripcion del menu'}]}) => {
+export const Especiales = ({imagen,datos=[{nombre:'Opcion 1',precio:'10',descripcion: 'Descripcion del menu'},{nombre:'Opcion 2',precio:'10',descripcion: 'Descripcion del menu'},{nombre:'Opcion 3',precio:'10',descripcion: 'Descripcion del menu'}],ruta}) => {
 
-  const [platos, setPlatos] = useState(datos)
+  const [platos, setPlatos] = useState(datos);
+  const navigate = useNavigate();
+
+  const irARuta = () => {
+    navigate(ruta);
+  };
   
   return (
     <div id='carta'>
@@ -25,7 +31,7 @@ export const Especiales = ({imagen,datos=[{nombre:'Opcion 1',precio:'10',descrip
               )
             })}
           </ul>
-          <button>MOSTRAR MAS</button>
+          <button onClick={irARuta}>MOSTRAR MAS</button>
         </div>
       </section>
     </div>
