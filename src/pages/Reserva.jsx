@@ -1,9 +1,9 @@
-import React from 'react'
+import { ComponenteReserva } from "../Components/ComponenteReserva/ComponenteReserva"
 
 export const Reserva = () => {
   return (
     <>
-      Reserva
+      <ComponenteReserva />
     </>
   )
 }

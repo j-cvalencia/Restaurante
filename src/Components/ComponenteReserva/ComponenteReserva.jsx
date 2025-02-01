@@ -1,9 +1,121 @@
-import './ComponenteReserva.css'
+import { useNavigate } from "react-router-dom";
+import { useForm } from "react-hook-form";
+import "./ComponenteReserva.css";
 
 export const ComponenteReserva = () => {
-  return (
-    <div>
+  const navegate = useNavigate();
 
+  const {
+    register,
+    handleSubmit,
+    reset,
+    setError,
+    formState: { errors },
+  } = useForm({
+    defaultValues: {
+      nombre: "",
+      correo: "",
+      mesa: "",
+      fecha: "",
+      hora: "",
+    },
+  });
+
+  const onSubmit = (data) => {
+    console.log(data);
+    reset();
+  };
+
+  const verificarFecha = (value) => {
+    let fechaActual = new Date();
+    let fechaSeleccionada = new Date(value);
+  
+    if (fechaSeleccionada < fechaActual.setHours(0, 0, 0, 0)) {
+      return "Ingresa una fecha válida";
+    } else {
+      return true;
+    }
+  };
+
+  const verificarHora = (value) => {
+    let hora = fecha.getHours();
+    let minutos = fecha.getMinutes();
+
+    let horaExacta = `${hora}:${minutos}`;
+    console.log(value);
+    console.log(horaExacta);
+  };
+
+  return (
+    <div id="contenedorFormulario">
+      <button onClick={() => navegate("/")} id="botonRegresar">
+        <i className="fa-solid fa-arrow-left"></i>
+      </button>
+      <h2>Reservar</h2>
+
+      <form autoComplete="off" onSubmit={handleSubmit(onSubmit)}>
+        <input
+          type="text"
+          placeholder="Nombre"
+          {...register("nombre", {
+            required: {
+              value: true,
+              message: "El nombre es obligatorio",
+            },
+          })}
+        />
+        {errors.nombre && <span>{errors.nombre.message}</span>}
+        <input
+          type="text"
+          placeholder="Correo"
+          {...register("correo", {
+            required: "El email es obligatorio",
+            pattern: {
+              value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
+              message: "Formato de email inválido",
+            },
+          })}
+        />
+        {errors.correo && <span>{errors.correo.message}</span>}
+        <input
+          type="number"
+          placeholder="Mesa"
+          min={1}
+          max={12}
+          {...register("mesa", {
+            required: {
+              value: true,
+              message: "Este campo es obligatorio",
+            },
+          })}
+        />
+        {errors.mesa && <span>{errors.mesa.message}</span>}
+        <input
+          type="date"
+          placeholder="Fecha de Reserva"
+          {...register("fecha", {
+            required: {
+              value: true,
+              message: "Seleccione la fecha",
+            },
+            validate: verificarFecha,
+          })}
+        />
+        {errors.fecha && <span>{errors.fecha.message}</span>}
+        <input
+          type="time"
+          placeholder="Hora de Reserva"
+          {...register("hora", {
+            required: {
+              value: true,
+              message: "Seleccione la hora",
+            },
+            validate: verificarHora,
+          })}
+        />
+        {errors.hora && <span>{errors.hora.message}</span>}
+        <button type="submit">ENVIAR</button>
+      </form>
     </div>
-  )
-}
+  );
+};

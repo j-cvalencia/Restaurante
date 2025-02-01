@@ -1,0 +1,10 @@
+#contenedorFormulario{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+#contenedorFormulario form{
+  align-items: center;
+  width: 80%;
+}

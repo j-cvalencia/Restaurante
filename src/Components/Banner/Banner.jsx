@@ -14,7 +14,7 @@ export const Banner = ({videoBanner,tituloBanner='Bienvenido a Nombre',descripci
           <p>{descripcionBanner}</p>
           <div id='botones'>
             <Button texto={textoBTN1} colorTexto={'white'} colorFondo={'black'} funcion={()=>navegate(rutaBTN1)}/>
-            <Button texto={textoBTN2} colorTexto={'black'} colorFondo={'#eac445'}/>
+            <Button texto={textoBTN2} colorTexto={'black'} colorFondo={'#eac445'} funcion={()=>navegate(rutaBTN2)}/>
           </div>
         </div>
       </div>
