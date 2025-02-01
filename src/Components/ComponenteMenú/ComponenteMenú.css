@@ -24,7 +24,7 @@ h2{
 #botonRegresar{
   background-color: #eac445;
   color: black;
-  position: absolute;
+  position: fixed;
   width: 30px;
   height: 30px;
   display: flex;

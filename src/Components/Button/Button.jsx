@@ -1,7 +1,7 @@
 import './Button.css'
 
-export const Button = ({texto,colorTexto,colorFondo}) => {
+export const Button = ({texto,colorTexto,colorFondo,funcion}) => {
   return (
-    <button className='botonesRedondos' style={{color: colorTexto, backgroundColor: colorFondo}}>{texto}</button>
+    <button onClick={funcion} className='botonesRedondos' style={{color: colorTexto, backgroundColor: colorFondo}}>{texto}</button>
   )
 }
