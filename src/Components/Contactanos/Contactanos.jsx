@@ -1,7 +1,7 @@
 import { Formulario } from "../Formulario/Formulario";
 import "./Contactanos.css";
 
-export const Contactanos = ({correo='Correo@correo.com',telefono='+00 00 00 000',direccion='Carrera 0 # 00-00 Extra',horario='09:00-18:00',facebook,instagram,whatsapp}) => {
+export const Contactanos = ({correo='Correo@correo.com',telefono='+00 00 00 000',direccion='Carrera 0 # 00-00 Extra',horario='08:00-18:00',facebook,instagram,whatsapp}) => {
   return (
     <div id="contacto">
       <section id="contactanos">
