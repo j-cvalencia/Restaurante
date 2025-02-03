@@ -61,30 +61,28 @@ export const ComponenteReserva = () => {
   const verificarHora = (value) => {
     if (!value) return "Hora no válida";
 
-    console.log("Fecha Hoy: ", fechaHoy);
-    console.log("Fecha Seleccionada: ", fechaSeleccionada);
+  const hora = fechaHoy.getHours();
+  const minutosHoy = fechaHoy.getMinutes();
 
-    const hora = fechaHoy.getHours();
+  const [horas, minutos] = value.split(":").map(Number);
 
-    console.log("Hora actual: ", hora);
-    console.log("Hora seleccionada: ", value);
+  const fechaHoySinHora = new Date(fechaHoy.getFullYear(), fechaHoy.getMonth(), fechaHoy.getDate());
+  const fechaSeleccionadaSinHora = new Date(fechaSeleccionada.getFullYear(), fechaSeleccionada.getMonth(), fechaSeleccionada.getDate());
 
-    const [horas, minutos] = value.split(":").map(Number);
-
-    const fechaHoySinHora = new Date(fechaHoy.getFullYear(), fechaHoy.getMonth(), fechaHoy.getDate());
-    const fechaSeleccionadaSinHora = new Date(fechaSeleccionada.getFullYear(), fechaSeleccionada.getMonth(), fechaSeleccionada.getDate());
-
-    if (fechaSeleccionadaSinHora.getTime() === fechaHoySinHora.getTime()) {
-      if (horas < hora) {
-        return 'Hora no válida';
-      }
+  if (fechaSeleccionadaSinHora.getTime() === fechaHoySinHora.getTime()) {
+    if (horas === hora && minutos <= minutosHoy) {
+      return 'Hora no válida';
     }
-
-    if (horas >= 8 && horas < 18) {
-      return true;
-    } else {
-      return "Hora no válida";
+    if (horas < hora || (horas === hora && minutos < minutosHoy)) {
+      return 'Hora no válida';
     }
+  }
+
+  if (horas >= 8 && horas < 18) {
+    return true;
+  } else {
+    return "Hora no válida";
+  }
   };
 
   return (
