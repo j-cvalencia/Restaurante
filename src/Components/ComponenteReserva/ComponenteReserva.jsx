@@ -86,7 +86,7 @@ export const ComponenteReserva = () => {
   };
 
   return (
-    <div id="contenedorFormulario">
+    <div id="contenedorFormularioReserva">
       <button onClick={() => navegate("/")} id="botonRegresar">
         <i className="fa-solid fa-arrow-left"></i>
       </button>
