@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import "./ComponenteReserva.css";
+import { useState } from "react";
 
 export const ComponenteReserva = () => {
   const navegate = useNavigate();
@@ -21,6 +22,9 @@ export const ComponenteReserva = () => {
     },
   });
 
+  const [fechaSeleccionada, setFechaSeleccionada] = useState();
+  const [fechaHoy,setFechaHoy] = useState()
+
   const onSubmit = (data) => {
     console.log(data);
     reset();
@@ -28,22 +32,59 @@ export const ComponenteReserva = () => {
 
   const verificarFecha = (value) => {
     let fechaActual = new Date();
-    let fechaSeleccionada = new Date(value);
-  
-    if (fechaSeleccionada < fechaActual.setHours(0, 0, 0, 0)) {
-      return "Ingresa una fecha válida";
+    fechaActual.setDate(fechaActual.getDate() + 1);
+
+    const dia = fechaActual.getDate() - 1;
+    const mes = fechaActual.getMonth();
+    const año = fechaActual.getFullYear();
+
+    const horas = fechaActual.getHours();
+    const minutos = fechaActual.getMinutes();
+    const segundos = fechaActual.getSeconds();
+
+    const fechaCompletaDate = new Date(año, mes, dia, horas, minutos, segundos);
+
+    const valueDate = new Date(value);
+    valueDate.setHours(horas, minutos, segundos);
+    valueDate.setDate(valueDate.getDate() + 1);
+
+    setFechaHoy(fechaCompletaDate);
+    setFechaSeleccionada(valueDate);
+
+    if (valueDate < fechaCompletaDate) {
+      return "Valor no valido";
     } else {
       return true;
     }
   };
 
   const verificarHora = (value) => {
-    let hora = fecha.getHours();
-    let minutos = fecha.getMinutes();
+    if (!value) return "Hora no válida";
 
-    let horaExacta = `${hora}:${minutos}`;
-    console.log(value);
-    console.log(horaExacta);
+    console.log("Fecha Hoy: ", fechaHoy);
+    console.log("Fecha Seleccionada: ", fechaSeleccionada);
+
+    const hora = fechaHoy.getHours();
+
+    console.log("Hora actual: ", hora);
+    console.log("Hora seleccionada: ", value);
+
+    const [horas, minutos] = value.split(":").map(Number);
+
+    const fechaHoySinHora = new Date(fechaHoy.getFullYear(), fechaHoy.getMonth(), fechaHoy.getDate());
+    const fechaSeleccionadaSinHora = new Date(fechaSeleccionada.getFullYear(), fechaSeleccionada.getMonth(), fechaSeleccionada.getDate());
+
+    if (fechaSeleccionadaSinHora.getTime() === fechaHoySinHora.getTime()) {
+      if (horas < hora) {
+        return 'Hora no válida';
+      }
+    }
+
+    if (horas >= 8 && horas < 18) {
+      return true;
+    } else {
+      return "Hora no válida";
+    }
   };
 
   return (
